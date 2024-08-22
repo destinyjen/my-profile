@@ -1,16 +1,17 @@
-function Header() {
+import React from 'react';
+
+const Header = () => {
     return (
-      <header>
-        <h2>Destiny's Portfolio</h2>
-        <nav>
-          {/* Navigation Links */}
-        </nav>
-      </header>
+        <header>
+            <h1>My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
     );
-  }
-  
-  export default Header;
-  // Main.js
-  import React from 'react';
-  import About from './About';
-  import Project from './Project';
+}
+export default Header;
