@@ -1,6 +1,8 @@
 import React from "react";
 
-const Projects = [
+const Projects = () => {
+
+  const Repos = [
     { 
       title: 'RU-Campus-Cuisine', 
       imgSrc: 'src\\assets\\project1.png', 
@@ -27,19 +29,24 @@ const Projects = [
   ];
 
 return (
-    <section id="projects">
-      <h2>Projects</h2>
-      <div className="project-list">
-        {projects.map((project, index) => (
-          <div className="project" key={index}>
-            <h3>{project.title}</h3>
-            <img src={project.imgSrc} alt={project.title} />
-            <a href={project.deployUrl} target="_blank" rel="noopener noreferrer">View Project</a>
-            <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">View Repository</a>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div id="project-list">
+      {Repos.map((repo, index) => {
+        return (
+          <div key={index} className="project">
+            <h3>{repo.title}</h3>
+            <img src={repo.imgSrc} alt={repo.title} />
+            <div className="project-links">
+              {repo.deployUrl && <a href={repo.deployUrl}>Deployed</a>}
+              {repo.repoUrl && <a href={repo.repoUrl}>Repository</a>}
+            </div>
           </div>
-        ))}
-      </div>
-    </section>
-  );
+        );
+      })}
+    </div>
+  </section>
+);
+}
 
 export default Projects;  // Ensure to export the component

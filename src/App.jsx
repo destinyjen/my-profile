@@ -1,18 +1,21 @@
 import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import About from './components/About';
+import Projects from './components/Projects';
 
-// import './App.css';
+import './App.css';
 
 // Main component
 const App = () => {
   return (
     <div className="App">
-      {{Header}}
+      <Header />
       <main>
-        <Main />
+        <About />
+        <Projects />
       </main>
-      {{Footer}}
+      <Footer />
     </div>
   );
 }
