@@ -38,8 +38,8 @@ return (
             <h3>{repo.title}</h3>
             <img src={repo.imgSrc} alt={repo.title} />
             <div className="project-links">
-              {repo.deployUrl && <a href={repo.deployUrl}>Deployed</a>}
-              {repo.repoUrl && <a href={repo.repoUrl}>Repository</a>}
+              {repo.deployUrl && <a href={repo.deployUrl}>Deployed Link</a>}
+              {repo.repoUrl && <a href={repo.repoUrl}>Repository Link</a>}
             </div>
           </div>
         );
