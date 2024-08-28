@@ -26,6 +26,18 @@ const Projects = () => {
         deployUrl: 'https://destinyjen.github.io/Marketing-BlogApp/', 
         repoUrl: 'https://github.com/destinyjen/Marketing-BlogApp' 
       },
+      {
+        title: 'Task Board',
+        imgSrc: 'src\\assets\\project5.png',
+        deployUrl: 'https://destinyjen.github.io/TaskBoard-App/',
+        repoUrl: 'https://github.com/destinyjen/TaskBoard-App'
+      },
+      {
+        title: 'JATE Text Editor',
+        imgSrc: 'src\\assets\\project6.png',
+        deployUrl: 'https://text-editor-cylw.onrender.com/',
+        repoUrl: 'https://github.com/destinyjen/text-editor'
+      }
   ];
 
 return (

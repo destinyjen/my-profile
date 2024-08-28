@@ -13,6 +13,7 @@ This application is my working profile built in REACT.
 ## installation 
 
 1. Git clone this repository
+2. npm run build
 2. npm run dev
 
 ## usage
